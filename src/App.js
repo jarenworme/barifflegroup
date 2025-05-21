@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Bariffle Group
+          Auto Deployment Test
         </a>
       </header>
     </div>

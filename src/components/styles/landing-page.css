@@ -1,0 +1,10 @@
+:root {
+    --primary: #024cad;
+    --primary-light: #1670bc;
+    --white: #ffffff;
+    --light-blue: #5bdfe4;
+}
+
+.lp-wrapper {
+    width: 100%;
+}

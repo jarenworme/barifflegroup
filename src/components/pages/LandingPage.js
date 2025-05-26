@@ -5,7 +5,7 @@ import '../styles/landing-page.css';
 import bglogo from "../../assets/logos/barifflelogotrim.jpeg";
 import image1 from "../../assets/images/BRIDGETOWN_barbados-g9afed3245_1920_wide.jpg";
 import image2 from "../../assets/images/bathsheba.jpg"
-import image3 from "../../assets/images/boat.jpg"
+import image3 from "../../assets/images/barbhero_16x9.jpg"
 import image4 from "../../assets/images/caribbeanmap.jpg"
 
 
@@ -39,7 +39,7 @@ export default function LandingPage () {
                 <div className="lp-nav-right">
                     <button className="lp-nav-btn" onClick={navigateLandingPage} >About Us</button>
                     <button className="lp-nav-btn" onClick={navigateInfo}>What We Do</button>
-                    <button className="lp-nav-btn" >Contact Us</button>
+                    <button className="lp-nav-btn" >Our Brands</button>
                 </div>
             </div>
             <div className="lp-block1">
@@ -77,14 +77,16 @@ export default function LandingPage () {
                     <div className="lp-card">
                         <h3 className="lp-card-title">Our Vision</h3>
                         <p className="lp-card-text">
-                            To become the Caribbean's most trusted bridge between world-class products and local demand.
+                            To become the Caribbean's most trusted bridge between health-focused, world-class products and the growing 
+                            demand for better everyday choices.
                         </p>
                     </div>
                     <div className="lp-card">
                         <h3 className="lp-card-title">Our Mission</h3>
                         <p className="lp-card-text">
                             To empower regional retailers, grocers, and wholesalers by giving them access to exceptional international 
-                            brands and seamless distribution.
+                            brands that offer healthier, more nutritious alternatives — supported by seamless and reliable 
+                            distribution. 
                         </p>
                     </div>
                 </div>

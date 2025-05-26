@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import '../styles/landing-page.css';
 
 import bglogo from "../../assets/logos/barifflelogotrim.jpeg";
-import image1 from "../../assets/images/cheapsidemarket.jpg";
+import image1 from "../../assets/images/Barbados-road-trip.jpg";
 import image2 from "../../assets/images/boat.jpg"
-//import image3 from "../../assets/images/bathsheba.jpg"
-//import image4 from "../../assets/images/caribbeanmap.jpg"
+import image3 from "../../assets/images/cheapsidemarket.jpg"
+import image4 from "../../assets/images/caribbeanmap.jpg"
 
 
 export default function WhatWeDo () {
@@ -44,7 +44,7 @@ export default function WhatWeDo () {
             </div>
             <div className="wwd-block1">
                 <h1 className="lp-block1-title">Import. Distribute. Grow Healthier.</h1>
-                <h2 className="lp-block1-subtitle">
+                <h2 className="wwd-block1-subtitle">
                     At Bariffle Group, we specialize in the importation and distribution of healthier fast-moving consumer goods 
                     (FMCGs) across the Caribbean. Our mission is to redefine everyday consumption by making better-for-you options 
                     - lower in sugar, salt, and artificial ingredients - widely available and accessible.
@@ -75,6 +75,41 @@ export default function WhatWeDo () {
                 <div className="lp-img-wrapper">
                     <img src={image2} alt="Barbados" className="lp-img" />
                 </div>
+            </div>
+            <div className="lp-img-block">
+                <div className="lp-img-block-content-wrapper">
+                    <h3 className="lp-img-block-title">Distribution & Retail Placement</h3>
+                    <p className="lp-text-blue">
+                        We collaborate with supermarkets, wholesalers, and independent retailers to place nutritious products where 
+                        they matter most. More than just delivering stock, we help build demand and educate consumers on smarter 
+                        choices through targeted placement and market engagement.
+                    </p>
+                </div>
+                <div className="lp-img-wrapper">
+                    <img src={image3} alt="Barbados" className="lp-img" />
+                </div>
+            </div>
+            <div className="lp-img-block lp-reverse-display">
+                <div className="lp-img-block-content-wrapper">
+                    <h3 className="lp-img-block-title right-align">Brand Development</h3>
+                    <p className="lp-text-blue right-align">
+                        We don't just move boxes—we build brands with purpose. From visual identity to in-store promotion, we help 
+                        develop and elevate health-forward brands that resonate with Caribbean consumers. Shirley's Blend Seasoning 
+                        is only the beginning.
+                    </p>
+                </div>
+                <div className="lp-img-wrapper">
+                    <img src={image4} alt="Barbados" className="lp-img" />
+                </div>
+            </div>
+            <div className="wwd-block3">
+                <h2 className="wwd-block3-title">
+                    Ready to join the health movement across the Caribbean?
+                </h2>
+                <p className="wwd-block3-text">
+                    Let's talk. We're actively seeking supplier partnerships and retail collaborations with a shared commitment to 
+                    wellness, accessibility, and regional growth.
+                </p>
             </div>
             <div className="footer">
                 <p className="footer-text">

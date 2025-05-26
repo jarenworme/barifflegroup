@@ -128,7 +128,7 @@
     height: 60vh;
     min-height: fit-content;
     width: 70%;
-    padding: 32px 15% 0 15%;
+    padding: 16px 15%;
     background-color: var(--white);
 }
 
@@ -160,6 +160,58 @@
 .right-align {
     text-align: right;
 }
+
+/***************************************************************************************************************************************/
+
+.lp-card-block {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding: 64px 15%;
+    background-color: var(--primary);
+}
+
+.lp-cards-wrapper {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.lp-card {
+    min-height: 180px;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    flex: 0 1 300px;
+    display: flex;
+    flex-direction: column; /* enables stretching */
+    justify-content: flex-start;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.lp-card-title {
+    font-size: x-large;
+    color: #2c5282;
+    margin-bottom: 1rem;
+}
+
+.lp-card-text {
+    font-size: large;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+
 
 /***************************************************************************************************************************************/
 

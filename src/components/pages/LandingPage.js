@@ -5,6 +5,8 @@ import '../styles/landing-page.css';
 import bglogo from "../../assets/logos/barifflelogotrim.jpeg";
 import image1 from "../../assets/images/BRIDGETOWN_barbados-g9afed3245_1920_wide.jpg";
 import image2 from "../../assets/images/bathsheba.jpg"
+import image3 from "../../assets/images/boat.jpg"
+import image4 from "../../assets/images/caribbeanmap.jpg"
 
 
 export default function LandingPage () {
@@ -48,9 +50,10 @@ export default function LandingPage () {
             <div className="lp-img-block">
                 <div className="lp-img-block-content-wrapper">
                     <p className="lp-text-blue">
-                        At Bariffle Group, we understand that the Caribbean deserves quality. So, we have made it 
-                        our business to empower regional retailers, grocers, and wholesalers by giving them access 
-                        to exceptional brands - from food and beverage to household staples - and seamless distribution.
+                        At Bariffle Group, we believe the Caribbean deserves more than just quality — it deserves better choices. 
+                        That's why we're committed to supplying regional retailers, grocers, and wholesalers with access to 
+                        exceptional, health-conscious brands. From wholesome food and beverages to healthier alternatives to everyday 
+                        products, we make better living more accessible — all backed by seamless, reliable distribution.
                     </p>
                 </div>
                 <div className="lp-img-wrapper">
@@ -60,13 +63,54 @@ export default function LandingPage () {
             <div className="lp-img-block lp-reverse-display">
                 <div className="lp-img-block-content-wrapper">
                     <p className="lp-text-blue right-align">
-                        Headquartered in Barbados, our vision is to be an unmatched, long-lasting bridge between Caribbean markets 
-                        and producers of high-quality goods across Latin America stamped by our signature efficiency, reliability, 
-                        and care.
+                        Headquartered in Barbados, our vision is to be the lasting link between Caribbean markets and Latin America's 
+                        top producers of nutritious, high-quality goods — driven by our commitment to healthier living and delivered 
+                        with signature efficiency, reliability, and care.
                     </p>
                 </div>
                 <div className="lp-img-wrapper">
                     <img src={image2} alt="Barbados" className="lp-img" />
+                </div>
+            </div>
+            <div className="lp-card-block">
+                <div className="lp-cards-wrapper">
+                    <div className="lp-card">
+                        <h3 className="lp-card-title">Our Vision</h3>
+                        <p className="lp-card-text">
+                            To become the Caribbean's most trusted bridge between world-class products and local demand.
+                        </p>
+                    </div>
+                    <div className="lp-card">
+                        <h3 className="lp-card-title">Our Mission</h3>
+                        <p className="lp-card-text">
+                            To empower regional retailers, grocers, and wholesalers by giving them access to exceptional international 
+                            brands and seamless distribution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="lp-img-block">
+                <div className="lp-img-block-content-wrapper">
+                    <p className="lp-text-blue">
+                        We are grounded in strong relationships and market intuition and sharp logistics. The team at Bariffle Group 
+                        combines experience in and enthusiasm for operations with regional retail understanding, and the result? A 
+                        lean, smart distribution company that knows how to get the right products on the right shelves.
+                    </p>
+                </div>
+                <div className="lp-img-wrapper">
+                    <img src={image3} alt="Barbados" className="lp-img" />
+                </div>
+            </div>
+            <div className="lp-img-block lp-reverse-display">
+                <div className="lp-img-block-content-wrapper">
+                    <p className="lp-text-blue right-align">
+                        We are committed to forging lasting partnerships across Latin America and the Caribbean. Ready to partner with 
+                        a distributor who knows the region and moves with intention? Let's talk. We're open to new supplier 
+                        relationships and regional retail collaborations.
+                    </p>
+                </div>
+                <div className="lp-img-wrapper">
+                    <img src={image4} alt="Barbados" className="lp-img" />
                 </div>
             </div>
             <div className="footer">

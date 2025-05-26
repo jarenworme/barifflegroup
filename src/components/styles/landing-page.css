@@ -281,10 +281,13 @@
 
 /***************************************************************************************************************************************/
 
-@media screen and (max-height: 500px) {
-    .lp-scrolled {
-        background-color: var(--footer);
+@media screen and (max-width: 520px) {
+    .lp-nav-logo {
+        display: none;
     }
+}
+
+@media screen and (max-height: 500px) {
     .lp-cta {
         margin-top: 24px;
     }
@@ -317,12 +320,6 @@
 
 @media (max-aspect-ratio: 1/1) {
     /* Styles for screens where width is less than height */
-    .lp-nav-logo {
-        display: none;
-    }
-    .lp-scrolled {
-        background-color: var(--footer);
-    }
     .wwd-block1-subtitle {
         font-size: larger;
     }

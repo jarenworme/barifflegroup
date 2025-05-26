@@ -1,8 +1,11 @@
 :root {
-    --primary: #024cad;
+    --primary: #004aad;
     --primary-light: #1670bc;
+    --primary-dark: #134aa7;
     --white: #ffffff;
     --light-blue: #5bdfe4;
+    --green: #7ed956;
+    --mid-green: #3e9082;
     --footer: #050d1a;
 }
 
@@ -61,6 +64,7 @@
     background-color: transparent;
     padding: 0;
     border: 2px solid transparent;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.1);
 }
 
 .lp-nav-btn:hover {
@@ -81,7 +85,18 @@
     background: linear-gradient(90deg, var(--light-blue) 0%, var(--primary) 100%);
 }
 
+.wwd-block1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--green) 100%);
+}
+
 .lp-block1-title {
+    max-width: 90%;
     color: var(--white);
     text-align: center;
     font-size: 400%;
@@ -89,6 +104,7 @@
 }
 
 .lp-block1-subtitle {
+    max-width: 70%;
     color: var(--white);
     text-align: center;
     font-size: x-large;
@@ -112,11 +128,6 @@
     color: black;
 }
 
-.lp-text-blue {
-    color: var(--primary);
-    text-align: left;
-    font-size: larger;
-}
 
 /***************************************************************************************************************************************/
 
@@ -155,6 +166,21 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+.lp-img-block-title {
+    width: 100%;
+    font-size: x-large;
+    color: #2c5282;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.lp-text-blue {
+    width: 100%;
+    color: #4a5568;
+    text-align: left;
+    font-size: larger;
 }
 
 .right-align {

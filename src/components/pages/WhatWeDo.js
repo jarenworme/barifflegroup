@@ -6,7 +6,7 @@ import bglogo from "../../assets/logos/barifflelogotrim.jpeg";
 import image1 from "../../assets/images/Barbados-road-trip.jpg";
 import image2 from "../../assets/images/boat.jpg"
 import image3 from "../../assets/images/cheapsidemarket.jpg"
-import image4 from "../../assets/images/caribbeanmap.jpg"
+import image4 from "../../assets/images/carringtons2.jpg"
 
 
 export default function WhatWeDo () {
@@ -16,6 +16,7 @@ export default function WhatWeDo () {
     // routing functions
     const navigateInfo = () => navigate('/info', { replace: false });
     const navigateLandingPage = () => navigate('/', { replace: false });
+    const navigateBrands = () => navigate('/brands', { replace: false });
 
     // state variables 
     const [isScrolled, setIsScrolled] = useState(false);
@@ -39,7 +40,7 @@ export default function WhatWeDo () {
                 <div className="lp-nav-right">
                     <button className="lp-nav-btn" onClick={navigateLandingPage} >About Us</button>
                     <button className="lp-nav-btn" onClick={navigateInfo}>What We Do</button>
-                    <button className="lp-nav-btn" >Our Brands</button>
+                    <button className="lp-nav-btn" onClick={navigateBrands}>Our Brands</button>
                 </div>
             </div>
             <div className="wwd-block1">

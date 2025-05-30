@@ -6,6 +6,7 @@
     --light-blue: #5bdfe4;
     --green: #7ed956;
     --mid-green: #3e9082;
+    --pink: #f0117b;
     --footer: #050d1a;
 }
 
@@ -94,6 +95,16 @@
     background: linear-gradient(90deg, var(--primary) 0%, var(--green) 100%);
 }
 
+.brands-block1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--pink) 100%);
+}
+
 .lp-block1-title {
     max-width: 90%;
     color: var(--white);
@@ -141,6 +152,10 @@
     background-color: var(--white);
 }
 
+.no-top {
+    padding-top: 0;
+}
+
 .lp-reverse-display{
     flex-direction: row-reverse;
 }
@@ -158,6 +173,11 @@
 .lp-img-wrapper {
     height: 75%;
     width: 50%;
+}
+
+.brands-img-wrapper {
+    height: 90%;
+    width: 45%;
 }
 
 .lp-img {
@@ -261,6 +281,24 @@
     font-size: larger;
     color: var(--white);
     margin-bottom: 16px;
+}
+
+/***************************************************************************************************************************************/
+
+.brand-title {
+    height: fit-content;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding: 5% 5% 0 5%;
+    font-size: xx-large;
+    text-align: center;
+    color: #2c5282;
+}
+
+.brands-hr {
+    margin-top: 1px solid #888888;
+    width: 70%;
 }
 
 /***************************************************************************************************************************************/

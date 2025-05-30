@@ -16,6 +16,7 @@ export default function LandingPage () {
     // routing functions
     const navigateInfo = () => navigate('/info', { replace: false });
     const navigateLandingPage = () => navigate('/', { replace: false });
+    const navigateBrands = () => navigate('/brands', { replace: false });
 
     // state variables 
     const [isScrolled, setIsScrolled] = useState(false);
@@ -39,7 +40,7 @@ export default function LandingPage () {
                 <div className="lp-nav-right">
                     <button className="lp-nav-btn" onClick={navigateLandingPage} >About Us</button>
                     <button className="lp-nav-btn" onClick={navigateInfo}>What We Do</button>
-                    <button className="lp-nav-btn" >Our Brands</button>
+                    <button className="lp-nav-btn" onClick={navigateBrands}>Our Brands</button>
                 </div>
             </div>
             <div className="lp-block1">

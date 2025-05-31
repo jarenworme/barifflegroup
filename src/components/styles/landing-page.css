@@ -195,6 +195,7 @@
 }
 
 .lp-text-blue {
+    margin: 8px 0;
     width: 100%;
     color: #4a5568;
     text-align: left;
@@ -301,6 +302,21 @@
     width: 70%;
 }
 
+.brands-text-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15%;
+}
+
+.brands-text {
+    margin: 8px 0;
+    width: 100%;
+    color: #4a5568;
+    text-align: center;
+    font-size: larger;
+}
+
+
 /***************************************************************************************************************************************/
 
 .footer {
@@ -379,6 +395,9 @@
     .lp-img-wrapper {
         height: 50vh;
         width: 100%;
+    }
+    .brands-text-wrapper {
+        padding: 8%;
     }
     .footer {
         padding-bottom: 64px;

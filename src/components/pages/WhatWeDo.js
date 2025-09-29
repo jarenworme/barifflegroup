@@ -44,20 +44,20 @@ export default function WhatWeDo () {
                 </div>
             </div>
             <div className="wwd-block1">
-                <h1 className="lp-block1-title">Import. Distribute. Grow Healthier.</h1>
+                <h1 className="lp-block1-title">Import. Distribute. Elevate.</h1>
                 <h2 className="wwd-block1-subtitle">
-                    At Bariffle Group, we specialize in the importation and distribution of healthier fast-moving consumer goods 
-                    (FMCGs) across the Caribbean. Our mission is to redefine everyday consumption by making better-for-you options 
-                    - lower in sugar, salt, and artificial ingredients - widely available and accessible.
+                    Bariffle Group specializes in the importation and distribution of high-quality fast-moving consumer goods 
+                    (FMCGs) across the Caribbean. Our mission is to raise the standard of everyday consumption by making world-class 
+                    products widely available and accessible — all backed by seamless and reliable distribution.
                 </h2>
             </div>
             <div className="lp-img-block">
                 <div className="lp-img-block-content-wrapper">
                     <h3 className="lp-img-block-title">Strategic Sourcing</h3>
                     <p className="lp-text-blue">
-                        We partner with trusted suppliers across Latin America who share our vision for wellness and quality. Every 
-                        product we bring in aligns with evolving Caribbean tastes while meeting our strict standards for nutritional 
-                        value, ingredient transparency, and consistency.
+                        We partner with trusted suppliers across Latin America who share our commitment to excellence. Every product we 
+                        bring to the Caribbean is carefully selected to match evolving consumer preferences while meeting our strict 
+                        standards for quality, transparency, and consistency.
                     </p>
                 </div>
                 <div className="lp-img-wrapper">
@@ -81,9 +81,9 @@ export default function WhatWeDo () {
                 <div className="lp-img-block-content-wrapper">
                     <h3 className="lp-img-block-title">Distribution & Retail Placement</h3>
                     <p className="lp-text-blue">
-                        We collaborate with supermarkets, wholesalers, and independent retailers to place nutritious products where 
-                        they matter most. More than just delivering stock, we help build demand and educate consumers on smarter 
-                        choices through targeted placement and market engagement.
+                        We collaborate with supermarkets, wholesalers, and independent retailers to ensure high-quality products are 
+                        placed where they matter most. More than just delivering stock, we help build demand and strengthen brand 
+                        presence through strategic placement and effective market engagement.
                     </p>
                 </div>
                 <div className="lp-img-wrapper">

@@ -186,6 +186,10 @@
     width: 100%;
 }
 
+.lp-adjust-img-fill {
+    object-fit: contain;
+}
+
 .lp-img-block-title {
     width: 100%;
     font-size: x-large;
@@ -316,6 +320,69 @@
     font-size: larger;
 }
 
+.lp-flavors-section {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.lp-flavors-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 48px;
+    color: #1e3a8a; /* adjust to match lp-text-blue if needed */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.rq-logo-wrapper {
+    height: 75%;
+    width: 50%;
+}
+
+.lp-flavors-grid {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* Individual flavor card */
+.lp-flavor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 200px;
+}
+
+/* No-background product images */
+.lp-flavor-img {
+    height: 260px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin-bottom: 24px;
+    transition: transform 0.25s ease;
+}
+
+/* Optional subtle hover */
+.lp-flavor-card:hover .lp-flavor-img {
+    transform: translateY(-6px);
+}
+
+/* Flavor label */
+.lp-flavor-name {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1f2937;
+}
+
+
 
 /***************************************************************************************************************************************/
 
@@ -367,6 +434,9 @@
         height: 50vh;
         width: 100%;
     }
+    .rq-logo-wrapper {
+        width: 100%;
+    }
     .footer {
         padding-bottom: 64px;
     }
@@ -395,6 +465,10 @@
     .lp-img-wrapper {
         height: 50vh;
         width: 100%;
+    }
+    .rq-logo-wrapper {
+        width: 100%;
+        height: 40vh;
     }
     .brands-text-wrapper {
         padding: 8%;

@@ -51,7 +51,52 @@ export default function OurBrands () {
                 <h1 className="lp-block1-title">Our Brands</h1>
                 <h2 className="lp-block1-subtitle">Explore the companies that trust us to put product to shelf</h2>
             </div>
-            <h2 className="brand-title">Our Major Brand: Carringtons Rum Cream</h2>
+
+
+            <h2 className="brand-title">Rhodes Quality</h2>
+            <hr className="brands-hr" />
+            <div className="lp-img-block no-top">
+                <div className="lp-img-block-content-wrapper">
+                    <h3 className="lp-img-block-title">
+                        Feel Good with Every Sip.
+                    </h3>
+                    <p className="lp-text-blue">
+                        Rhodes Quality delivers a vibrant lineup of 100% fruit juices which make every sip taste like summer. 
+                        Made with carefully selected ingredients and inspired by
+                        global flavors, their 1L and 200ml options offer a clean, modern taste designed to stand out on the shelf
+                        and in the glass.
+                    </p>
+                </div>
+
+                <div className="rq-logo-wrapper">
+                    <img src={brandHeroImage} alt="[Brand Name]" className="lp-img lp-adjust-img-fill" />
+                </div>
+            </div>
+
+            <div className="lp-flavors-section">
+                <h4 className="lp-flavors-title">Available Flavors</h4>
+
+                <div className="lp-flavors-grid">
+                    <div className="lp-flavor-card">
+                        <img src={mangoImg} alt="Mango flavor" className="lp-flavor-img" />
+                        <p className="lp-flavor-name">Mango</p>
+                    </div>
+
+                    <div className="lp-flavor-card">
+                        <img src={litchiImg} alt="Litchi flavor" className="lp-flavor-img" />
+                        <p className="lp-flavor-name">Litchi</p>
+                    </div>
+
+                    <div className="lp-flavor-card">
+                        <img src={berryImg} alt="Berry flavor" className="lp-flavor-img" />
+                        <p className="lp-flavor-name">Berry</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h2 className="brand-title">Carringtons Rum Cream</h2>
             <hr className="brands-hr" />
             <div className="lp-img-block no-top">
                 <div className="lp-img-block-content-wrapper">
@@ -119,50 +164,6 @@ export default function OurBrands () {
                     from a passion project into a Caribbean brand in the making—one that celebrates legacy, uplifts community, and 
                     brings authentic Barbadian flavor to the world.
                 </p>
-            </div>
-
-            <h2 className="brand-title">Rhodes Quality</h2>
-            <hr className="brands-hr" />
-            <div className="lp-img-block no-top">
-                {/* Brand intro */}
-                <div className="lp-img-block-content-wrapper">
-                    <h3 className="lp-img-block-title">
-                        Feel Good with Every Sip.
-                    </h3>
-                    <p className="lp-text-blue">
-                        Rhodes Quality delivers a vibrant lineup of 100% fruit juices which make every sip taste like summer. 
-                        Made with carefully selected ingredients and inspired by
-                        global flavors, their 1L and 200ml options offer a clean, modern taste designed to stand out on the shelf
-                        and in the glass.
-                    </p>
-                </div>
-
-                {/* Optional brand hero image */}
-                <div className="rq-logo-wrapper">
-                    <img src={brandHeroImage} alt="[Brand Name]" className="lp-img lp-adjust-img-fill" />
-                </div>
-            </div>
-
-            {/* Flavors section */}
-            <div className="lp-flavors-section">
-                <h4 className="lp-flavors-title">Available Flavors</h4>
-
-                <div className="lp-flavors-grid">
-                    <div className="lp-flavor-card">
-                        <img src={mangoImg} alt="Mango flavor" className="lp-flavor-img" />
-                        <p className="lp-flavor-name">Mango</p>
-                    </div>
-
-                    <div className="lp-flavor-card">
-                        <img src={litchiImg} alt="Litchi flavor" className="lp-flavor-img" />
-                        <p className="lp-flavor-name">Litchi</p>
-                    </div>
-
-                    <div className="lp-flavor-card">
-                        <img src={berryImg} alt="Berry flavor" className="lp-flavor-img" />
-                        <p className="lp-flavor-name">Berry</p>
-                    </div>
-                </div>
             </div>
 
 

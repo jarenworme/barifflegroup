@@ -1,12 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import '../styles/landing-page.css';
 
 import bglogo from "../../assets/logos/barifflelogotrim.jpeg";
-import image1 from "../../assets/images/carringtons.jpg";
+import image1 from "../../assets/images/carringtonsupdated.jpg";
 import image2 from "../../assets/images/Signature-Aerial-_1_.jpg";
 import image3 from "../../assets/images/award.jpg";
-import image4 from "../../assets/images/brand (1).jpeg"
 import brandHeroImage from "../../assets/images/rqlogowhite.jpg"
 import mangoImg from "../../assets/images/mango.png"
 import berryImg from "../../assets/images/berry.png"
@@ -17,10 +16,12 @@ export default function OurBrands () {
     // init navigate variable for page navigation
     const navigate = useNavigate();
 
+    // ref for scrolling to page section
+    const sectionRef = useRef(null);
+
     // routing functions
     const navigateInfo = () => navigate('/info', { replace: false });
     const navigateLandingPage = () => navigate('/', { replace: false });
-    const navigateBrands = () => navigate('/brands', { replace: false });
 
     // state variables 
     const [isScrolled, setIsScrolled] = useState(false);
@@ -34,6 +35,14 @@ export default function OurBrands () {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // function to scroll to page section on button click
+    const scrollToSection = () => {
+        sectionRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start', // Aligns the top of the element to the top of the visible area
+        });
+    };
+
 
     return (
         <div className="lp-wrapper">
@@ -42,9 +51,9 @@ export default function OurBrands () {
                     <img src={bglogo} alt="logo" className="lp-nav-logo" />
                 </button>
                 <div className="lp-nav-right">
+                    <button className="lp-nav-btn" onClick={scrollToSection}>Contact Us</button>
                     <button className="lp-nav-btn" onClick={navigateLandingPage} >About Us</button>
                     <button className="lp-nav-btn" onClick={navigateInfo}>What We Do</button>
-                    <button className="lp-nav-btn" onClick={navigateBrands}>Our Brands</button>
                 </div>
             </div>
             <div className="brands-block1">
@@ -168,7 +177,7 @@ export default function OurBrands () {
 
 
 
-            <h2 className="brand-title">Shirley's Blend</h2>
+            {/* <h2 className="brand-title">Shirley's Blend</h2>
             <hr className="brands-hr" />
             <div className="lp-img-block lp-reverse-display no-top">
                 <div className="lp-img-block-content-wrapper">
@@ -184,8 +193,11 @@ export default function OurBrands () {
                 <div className="lp-img-wrapper">
                     <img src={image4} alt="Shirley's" className="lp-img" />
                 </div>
-            </div>
-            <div className="footer">
+            </div> */}
+            <div ref={sectionRef} id="targetSection" className="footer">
+                <a className="footer-email" href="mailto:import@barifflegroup.com?subject=Inquiry from Website&body=Hi Bariffle Team," >
+                    Contact us at import@barifflegroup.com
+                </a>
                 <p className="footer-text">
                     &copy; {new Date().getFullYear()} Bariffle Group. All rights reserved.
                 </p>

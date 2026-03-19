@@ -138,7 +138,7 @@ export default function OurBrands () {
                         Western Wholesale, Rum & Company, and a dedicated airport kiosk in Grantley Adams International
                     </p>
                     <p className="lp-text-blue right-align">
-                        Luxury hotels like the Wyndham Grand and Dover Beach Hotel
+                        Luxury hotels like Sandals Resort and Dover Beach Hotel
                     </p>
                 </div>
                 <div className="lp-img-wrapper">

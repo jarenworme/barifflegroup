@@ -122,6 +122,7 @@ export default function WhatWeDo () {
                     wellness, accessibility, and regional growth.
                 </p>
             </div>
+            
             <div ref={sectionRef} id="targetSection" className="footer">
                 <a className="footer-email" href="mailto:import@barifflegroup.com?subject=Inquiry from Website&body=Hi Bariffle Team," >
                     Contact us at import@barifflegroup.com

@@ -22,7 +22,6 @@ export default function OurBrands () {
     // routing functions
     const navigateInfo = () => navigate('/info', { replace: false });
     const navigateLandingPage = () => navigate('/', { replace: false });
-    const navigateBrands = () => navigate('/brands', { replace: false });
 
     // state variables 
     const [isScrolled, setIsScrolled] = useState(false);

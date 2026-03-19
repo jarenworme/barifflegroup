@@ -17,7 +17,6 @@ export default function WhatWeDo () {
     const sectionRef = useRef(null);
 
     // routing functions
-    const navigateInfo = () => navigate('/info', { replace: false });
     const navigateLandingPage = () => navigate('/', { replace: false });
     const navigateBrands = () => navigate('/brands', { replace: false });
 

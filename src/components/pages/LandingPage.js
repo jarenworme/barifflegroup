@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import '../styles/landing-page.css';
 
@@ -12,6 +12,9 @@ import image4 from "../../assets/images/caribbeanmap.jpg"
 export default function LandingPage () {
     // init navigate variable for page navigation
     const navigate = useNavigate();
+
+    // ref for scrolling to page section
+    const sectionRef = useRef(null);
 
     // routing functions
     const navigateInfo = () => navigate('/info', { replace: false });
@@ -30,6 +33,14 @@ export default function LandingPage () {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // function to scroll to page section on button click
+    const scrollToSection = () => {
+        sectionRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start', // Aligns the top of the element to the top of the visible area
+        });
+    };
+
 
     return (
         <div className="lp-wrapper">
@@ -38,7 +49,7 @@ export default function LandingPage () {
                     <img src={bglogo} alt="logo" className="lp-nav-logo" />
                 </button>
                 <div className="lp-nav-right">
-                    <button className="lp-nav-btn" onClick={navigateLandingPage} >About Us</button>
+                    <button className="lp-nav-btn" onClick={scrollToSection}>Contact Us</button>
                     <button className="lp-nav-btn" onClick={navigateInfo}>What We Do</button>
                     <button className="lp-nav-btn" onClick={navigateBrands}>Our Brands</button>
                 </div>
@@ -114,7 +125,10 @@ export default function LandingPage () {
                     <img src={image4} alt="Barbados" className="lp-img" />
                 </div>
             </div>
-            <div className="footer">
+            <div ref={sectionRef} id="targetSection" className="footer">
+                <a className="footer-email" href="mailto:import@barifflegroup.com?subject=Inquiry from Website&body=Hi Bariffle Team," >
+                    Contact us at import@barifflegroup.com
+                </a>
                 <p className="footer-text">
                     &copy; {new Date().getFullYear()} Bariffle Group. All rights reserved.
                 </p>
